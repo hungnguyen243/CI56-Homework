@@ -1,0 +1,9 @@
+Khái niệm OOP:
+
+Lập trình hướng đối tượng là một kỹ thuật lập trình cho phép lập trình viên tạo ra các đối tượng trong code để trừu tượng hóa các đối tượng thực tế trong cuộc sống.
+
+4 Tính chất của OOP:
++ Tính đóng gói (Encapsulation)
++ Tính kế thừa (Inheritance)
++ Tính đa hình (Polymorphism)
++ Tính trừu tượng(Abstraction)
