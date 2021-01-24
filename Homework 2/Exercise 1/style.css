@@ -1,0 +1,9 @@
+#content-wrapper {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+#meme-collection {
+  display: flex;
+  justify-content: stretch;
+}
