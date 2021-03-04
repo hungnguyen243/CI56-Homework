@@ -2,8 +2,7 @@ function sortFunc(list1, list2) {
     let output = [];
     let i = 0;
     let j = 0;
-    let shorterLength = Math.min(list1.length, list2.length);
-    while (i < shorterLength && j < shorterLength) {
+    while (i < list1.length && j < list2.length) {
         if (list1[i] <= list2[j]) {
             output.push(list1[i]);
             i++;
@@ -12,13 +11,13 @@ function sortFunc(list1, list2) {
             j++;
         }
     }
-    if (i === shorterLength) {
-        for (k = j; k < list2.length; k++) {
-            output.push(list2[k]);
+    if (i === list1.length) {
+        for (j; j < list2.length; j++) {
+            output.push(list2[j]);
         }
-    } else if (j === shorterLength) {
-        for (k = i; k < list1.length; k++) {
-            output.push(list2[k]);
+    } else if (j === list2.length) {
+        for (i; i < list1.length; i++) {
+            output.push(list1[i]);
         }
     }
     console.log(output);
@@ -27,7 +26,9 @@ function sortFunc(list1, list2) {
 let list1 = prompt("Nhập vào dãy số 1: ");
 let list2 = prompt("Nhập vào dãy số 2");
 list1 = list1.split(",");
-list1.map((ele) => parseInt(ele));
+console.log(list1);
+list1 = list1.map((ele) => parseInt(ele.trim()));
 list2 = list2.split(",");
-list2.map((ele) => parseInt(ele));
+console.log(list2);
+list2 = list2.map((ele) => parseInt(ele.trim()));
 sortFunc(list1, list2);
